@@ -38,6 +38,7 @@
   height: 72px;
   line-height: 80px;
   position: relative;
+  cursor: pointer;
 }
 #gnb > ul > li:first-child {
   float: left;

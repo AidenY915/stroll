@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="../gnb/gnb.css" />
     <link rel="stylesheet" href="aroundme.css" />
     <link rel="stylesheet" href="../css/frameCss.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="../login/login.css" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+      integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
+      crossorigin="anonymous"
+    ></script>
     <script src="../gnb/gnb.js"></script>
     <script src="../footer/footer.js"></script>
     <script src="addResultContents.js"></script>
+    <script src="slider.js"></script>
+    <script src="aroundme.js"></script>
+    <script src="../login/login.js"></script>
   </head>
   <body>
     <header>
@@ -32,9 +42,27 @@
         <li>유치원</li>
         <li>동물병원</li>
       </ul>
-      <aside class="sideFilter"></aside>
+      <aside class="sideFilter">
+        <div class="distanceFilter">
+          거리 필터
+          <div class="slider"></div>
+        </div>
+        <div class="starFilter">
+          별점 필터
+          <div class="slider"></div>
+        </div>
+        <div class="reviewFilter">
+          리뷰 필터
+          <div class="slider"></div>
+        </div>
+      </aside>
       <section class="resultContents">
-        <ul></ul>
+        <ul class="orderByUl">
+          <li>거리 순</li>
+          <li>별점 순</li>
+          <li>리뷰 순</li>
+        </ul>
+        <ul class="results"></ul>
       </section>
     </div>
   </body>

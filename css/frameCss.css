@@ -4,6 +4,8 @@
 
 body {
   margin: 0;
+  font-family: "맑은 고딕", "맑은고딕", "Malgun Gothic", sans-serif;
+  color: rgba(0, 0, 0, 0.6);
 }
 .container {
   margin: auto;

@@ -1,7 +1,7 @@
 const gnb = document.createElement("section");
 gnb.innerHTML = `<ul>
 <li><a href = '../main/main.html'>산책갈까?</a></li>
-<li><a href = '#'>로그인</a></li>
+<li><a onclick = 'showLogInFrame()'>로그인</a></li>
 <li><a href = '../notice/notice.html'>더보기</a></li>
 <li><a href = '#'>예약내역</a></li>
 <li><a href = '../aroundme/aroundme.html'>내 주변</a></li>
@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .animate({ right: "+=451px" }, 250, "linear", function () {
         $("#searchInput").show(100).focus();
       });
-    $("div").css;
   });
   $("#searchInput").on("blur", function () {
     curtain.style.display = "none";
