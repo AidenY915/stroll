@@ -1,0 +1,44 @@
+.locationBtn {
+  background-color: rgb(216, 66, 56);
+  border: 0;
+  color: white;
+  border-radius: 5px;
+}
+
+.categoryUl {
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  padding-bottom: 5px;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+.categoryUl > li {
+  float: left;
+  padding: 10px;
+}
+
+.sideFilter {
+  height: 700px;
+  width: 300px;
+  box-shadow: 3px 3px 3px 3px #eee;
+  border-radius: 5px;
+  float: left;
+}
+
+.resultContents {
+  float: left;
+  height: 1000px;
+  width: 670px;
+  margin-left: 30px;
+  border: 1px solid #eee;
+}
+
+.resultContents > ul {
+  list-style: none;
+}
+
+.resultContetns > ul > li > a {
+  display: block;
+}

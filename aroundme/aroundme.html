@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내 주변</title>
+    <link rel="stylesheet" href="../gnb/gnb.css" />
+    <link rel="stylesheet" href="aroundme.css" />
+    <link rel="stylesheet" href="../css/frameCss.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../gnb/gnb.js"></script>
+    <script src="../footer/footer.js"></script>
+    <script src="addResultContents.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>내 주변</h1>
+        <p>서울시 강남구: <button class="locationBtn">내 위치 설정</button></p>
+      </div>
+    </header>
+    <div class="container">
+      <ul class="categoryUl">
+        <li>숙박</li>
+        <li>카페</li>
+        <li>음식점</li>
+        <li>놀이터</li>
+        <li>유치원</li>
+        <li>동물병원</li>
+      </ul>
+      <aside class="sideFilter"></aside>
+      <section class="resultContents">
+        <ul></ul>
+      </section>
+    </div>
+  </body>
+</html>

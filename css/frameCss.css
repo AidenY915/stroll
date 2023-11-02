@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.container {
+  margin: auto;
+  width: 1000px;
+  padding: 0;
+  overflow: hidden;
+}
+
+header {
+  padding: 72px 0;
+  height: 211px;
+  background-color: #ff5f55;
+  color: white;
+  width: 100vw;
+}
+
+header > .Container {
+  padding: 13px;
+  padding-top: 0;
+}

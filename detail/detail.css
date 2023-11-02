@@ -1,0 +1,12 @@
+.about {
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.about > img {
+  float: left;
+}
+.about > article {
+  float: left;
+  margin-left: 20px;
+}
