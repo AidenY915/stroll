@@ -1,7 +1,10 @@
 const loginFrame = document.createElement("div");
 loginFrame.id = "loginFrame";
 loginFrame.innerHTML = `
-    <img src = "http://placehold.it/150x150" class = 'logoImg'>
+    <div class = "logoContainer">
+      <img src = "../images/Dog_Paw_Print_logo.png" class = 'logoImg'>
+      <p>산책갈까</p>
+    </div>
     <p>Log in</p>
     <form>
     <input type='text'>

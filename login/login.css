@@ -14,13 +14,20 @@
 #loginFrame * {
   margin: auto;
 }
-#loginFrame > img {
+.logoContainer > img {
   display: block;
   width: 150px;
-  margin: auto;
+  opacity: 0.6;
+}
+.logoContainer > p {
+  width: 150px;
+  text-align: center;
+  font-size: 24px;
+  color: #ff5f55;
+  font-family: "yg-jalnan";
 }
 #loginFrame > form {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 #loginFrame > p {
   text-align: center;

@@ -2,7 +2,7 @@ const gnb = document.createElement("section");
 gnb.innerHTML = `<ul>
 <li><a href = '../main/main.html'>산책갈까?</a></li>
 <li><a onclick = 'showLogInFrame()'>로그인</a></li>
-<li><a href = '../notice/notice.html'>더보기</a></li>
+<li><a href = '../moreInfo/moreInfo.html'>더보기</a></li>
 <li><a href = '#'>예약내역</a></li>
 <li><a href = '../aroundme/aroundme.html'>내 주변</a></li>
 <li><a id ='searchBtn'><img id='searchIcon' src ='../images/search_icon.png'></a><input id = "searchInput" type = "search"/></li>

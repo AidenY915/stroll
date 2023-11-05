@@ -1,0 +1,18 @@
+.container > * {
+  float: left;
+  margin-top: 40px;
+}
+
+.sideLnb > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  margin-right: 50px;
+  border: 1px solid black;
+}
+.content {
+  width: 750px;
+  min-height: 1000px;
+  border: 1px solid black;
+}
