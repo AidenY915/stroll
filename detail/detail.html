@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail</title>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../gnb/gnb.css" />
     <link rel="stylesheet" href="../css/frameCss.css" />
     <link rel="stylesheet" href="detail.css" />
@@ -13,22 +19,55 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+      integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
     <script src="../gnb/gnb.js"></script>
     <script src="../footer/footer.js"></script>
     <script src="../login/login.js"></script>
+    <script src="addReview.js"></script>
+
+    <script src="splide.js"></script>
   </head>
   <body>
     <div class="container">
       <section class="about">
-        <img src="https://picsum.photos/490/348" />
+        <div class="imgSlider">
+          <img class="displayedImg" />
+          <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list"></ul>
+            </div>
+          </section>
+        </div>
         <article>
           <h2>장소 이름</h2>
           <p>별점</p>
-          <p>주소</p>
+          <p><span>주소</span><span>리뷰</span></p>
           <p>간략한 설명</p>
         </article>
       </section>
       <section class="detailInfo"></section>
+      <section class="reviewSection">
+        <form class="commentWritingForm">
+          <select class>
+            <option value="1">★</option>
+            <option value="2">★★</option>
+            <option value="3" selected>★★★</option>
+            <option value="4">★★★★</option>
+            <option value="5">★★★★★</option>
+          </select>
+          <textarea></textarea>
+
+          <button>저장</button>
+        </form>
+        <ul class="reviews"></ul>
+      </section>
     </div>
   </body>
 </html>

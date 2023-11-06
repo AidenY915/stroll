@@ -43,3 +43,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+let beforeScroll = 0;
+document.addEventListener("scroll", (event) => {
+  const scrollY = window.scrollY;
+  if (scrollY != 0 && beforeScroll != 0) return;
+  if (scrollY > 0) {
+    $(gnb).finish().animate({ backgroundColor: "white" }, 200, "linear");
+    $(gnb).css("color", "rgba(0, 0, 0, 0.6)");
+    $("#gnb li:first-child").css("color", "#ff5f55");
+    $("#searchIcon").attr("src", "../images/search_icon_black.png");
+  } else {
+    $(gnb).finish().animate(
+      {
+        backgroundColor: "#ff5f55",
+      },
+      200,
+      "linear"
+    );
+    $(gnb).css("color", "white");
+    $("#gnb li:first-child").css("color", "white");
+    $("#searchIcon").attr("src", "../images/search_icon.png");
+  }
+  beforeScroll = window.scrollY;
+});
