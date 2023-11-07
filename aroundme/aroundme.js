@@ -13,13 +13,29 @@ const clickLi = function () {
   $(this).css("color", "#ff5f55");
 };
 
+const closeMap = function (e) {
+  const map = document.querySelector("#mapContainer");
+  console.log(e.target);
+  if (
+    $(map).has(e.target).length === 0 &&
+    e.target !== map &&
+    e.target !== document.querySelector(".locationBtn")
+  ) {
+    $(map).hide();
+  }
+};
+
 $(() => {
+  $(".locationBtn").on("click", () => {
+    $("#mapContainer").css("display", "block");
+  });
+  $("body").on("click", closeMap);
   $(".categoryUl > li, .orderByUl > li").on("click", clickLi);
   $(".categoryUl > li:first-child, .orderByUl > li:first-child").trigger(
     "click"
   );
 
-  appendSlider(".slider:eq(0)", 0, 30, 1, "km");
-  appendSlider(".slider:eq(1)", 0, 5, 0, "점");
-  appendSlider(".slider:eq(2)", 0, 30, -2, "개");
+  appendSlider(".sliderContainer:eq(0)", 0, 30, 1, "km");
+  appendSlider(".sliderContainer:eq(1)", 0, 5, 0, "점");
+  appendSlider(".sliderContainer:eq(2)", 0, 30, -2, "개");
 });

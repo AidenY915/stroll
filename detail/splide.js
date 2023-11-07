@@ -10,10 +10,22 @@ document.addEventListener("DOMContentLoaded", function () {
     trimSpace: true,
   });
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 3; i++) {
     $(".splide__list").append(
       $(`<li class="splide__slide">
         <img src="https://picsum.photos/490/348" />
+        </li>`)
+    );
+
+    $(".splide__list").append(
+      $(`<li class="splide__slide">
+        <img src="https://picsum.photos/491/349" />
+        </li>`)
+    );
+
+    $(".splide__list").append(
+      $(`<li class="splide__slide">
+        <img src="https://picsum.photos/492/348" />
         </li>`)
     );
   }

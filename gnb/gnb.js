@@ -1,6 +1,6 @@
 const gnb = document.createElement("section");
 gnb.innerHTML = `<ul>
-<li><a href = '../main/main.html'>산책갈까?</a></li>
+<li><a href = '../main/main.html'>산책갈까</a></li>
 <li><a onclick = 'showLogInFrame()'>로그인</a></li>
 <li><a href = '../moreInfo/moreInfo.html'>더보기</a></li>
 <li><a href = '#'>예약내역</a></li>

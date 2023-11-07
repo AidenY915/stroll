@@ -1,4 +1,4 @@
-#time-range {
+.slider {
   width: 90%;
   margin: 0 auto;
   color: #cccccc;
@@ -58,6 +58,7 @@
   border: 0;
   border-radius: 6;
   background: #f99;
+  cursor: pointer;
 }
 
 .flat-slider.ui-slider-horizontal .ui-slider-range {

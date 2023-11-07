@@ -15,7 +15,7 @@ const makeSlider = ($query, minValue, maxValue, digit = 0, unit = "") => {
 };
 
 const sliderHtml = (min, max, digit, unit) => `
-<div id="time-range">
+<div class="slider">
     <p><span class="slider-start">${
       min / 10 ** digit
     }${unit}</span>에서 <span class="slider-end">${

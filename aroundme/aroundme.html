@@ -3,28 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/favicon.png" />
     <title>내 주변</title>
     <link rel="stylesheet" href="../gnb/gnb.css" />
     <link rel="stylesheet" href="aroundme.css" />
     <link rel="stylesheet" href="../css/frameCss.css" />
     <link rel="stylesheet" href="slider.css" />
     <link rel="stylesheet" href="../login/login.css" />
+    <!--  JQuery  -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+    <!--  JQuery UI  -->
     <script
       src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
       integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
       crossorigin="anonymous"
     ></script>
+    <!--  카카오 맵  -->
+    <script
+      type="text/javascript"
+      src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=5ae67ad4df34ce73bc2c557dd4b55779"
+    ></script>
+
     <script src="../gnb/gnb.js"></script>
     <script src="../footer/footer.js"></script>
     <script src="addResultContents.js"></script>
     <script src="slider.js"></script>
     <script src="aroundme.js"></script>
     <script src="../login/login.js"></script>
+    <script src="kakaoMap.js"></script>
   </head>
   <body>
     <header>
@@ -44,17 +54,20 @@
       </ul>
       <aside class="sideFilter">
         <div class="distanceFilter">
-          거리 필터
-          <div class="slider"></div>
+          거리
+          <div class="sliderContainer"></div>
         </div>
         <div class="starFilter">
-          별점 필터
-          <div class="slider"></div>
+          별점
+          <div class="sliderContainer"></div>
         </div>
         <div class="reviewFilter">
-          리뷰 필터
-          <div class="slider"></div>
+          리뷰
+          <div class="sliderContainer"></div>
         </div>
+        <form>
+          <button class="submitBtn" type="submit">다시 찾기</button>
+        </form>
       </aside>
       <section class="resultContents">
         <ul class="orderByUl">
