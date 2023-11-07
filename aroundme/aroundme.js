@@ -15,7 +15,6 @@ const clickLi = function () {
 
 const closeMap = function (e) {
   const map = document.querySelector("#mapContainer");
-  console.log(e.target);
   if (
     $(map).has(e.target).length === 0 &&
     e.target !== map &&
@@ -28,6 +27,7 @@ const closeMap = function (e) {
 $(() => {
   $(".locationBtn").on("click", () => {
     $("#mapContainer").css("display", "block");
+    map.relayout();
   });
   $("body").on("click", closeMap);
   $(".categoryUl > li, .orderByUl > li").on("click", clickLi);
