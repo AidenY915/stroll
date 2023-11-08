@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 let beforeScroll = 0;
-document.addEventListener("scroll", (event) => {
+
+const changeGnbColor = function () {
   const scrollY = window.scrollY;
   if (scrollY != 0 && beforeScroll != 0) return;
   if (scrollY > 0) {
@@ -66,4 +67,6 @@ document.addEventListener("scroll", (event) => {
     $("#searchIcon").attr("src", "../images/search_icon.png");
   }
   beforeScroll = window.scrollY;
-});
+};
+
+document.addEventListener("scroll", changeGnbColor);
